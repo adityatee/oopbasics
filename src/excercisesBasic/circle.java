@@ -7,7 +7,7 @@ public class circle {
 	
 	//constructors overloaded
 	/** first constructor with default values for instance variables - this is default constructor**/
-	public circle() //default constructor tet
+	public circle() //default constructor
 	{
 		radius = 1.0;
 		color = "red";
@@ -26,6 +26,7 @@ public class circle {
 		this.radius = radius;
 		this.color = color;
 	}
+	
 	/**returns the radius */
 	public double getRadius()
 	{
@@ -40,6 +41,11 @@ public class circle {
 	public double getArea()
 	{
 		return radius * radius * Math.PI;
+	}
+	/** This method calculate and returns the circumference of the circle for the instance */
+	public double getCircumference()
+	{
+		return 2 * Math.PI * radius;
 	}
 	/** Setter for instance variable radius */
 	public void setRadius(double radius)
@@ -56,5 +62,6 @@ public class circle {
 	{
 		return "circle[radius = " +radius+ " color = " +color+ "]";
 	}
+	
 }
 

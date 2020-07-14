@@ -27,6 +27,9 @@ public class testCircle {
 		System.out.println(c4.toString());
 		
 		
+		System.out.println("Circumference of the circle is " + c4.getCircumference());
+		
+		
 	}
 
 }
